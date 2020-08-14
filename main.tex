@@ -1,0 +1,166 @@
+%-------------------------
+% Resume in Latex
+% Author : Bony Roopchandani
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{0pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Bony Roopchandani} & Email : \href{mailto:bonyroopchandani@gmail.com}{bonyroopchandani@gmail.com}\\
+  \href{https://bonyroopchandani.com/}{https://bonyroopchandani.com/} & Mobile : +91-8233085557 \\
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Hiver}{Bengaluru, India}
+      {Senior Software Engineer}{May 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{Backend}
+          {Responsible for building the infrastructure on the backend as well as architecting and incorporating features.}
+        \resumeItem{Frontend}
+          {Developing an internal tool that helps in tracking/debugging if any/what issues can be found in a system.}
+      \resumeItemListEnd
+    
+    
+    \resumeSubheading
+      {Datalicious}{Bengaluru, India}
+      {Full Stack Engineer}{June 2017 - April 2019}
+      \resumeItemListStart
+        \resumeItem{Dashboard}
+          {Responsible for implementing dashboard using React, D3, and Flask for the product which aims at providing better insights into customer journeys over a website. My responsibilities included grooming stories for a new feature, planning and managing the dashboard.}
+        \resumeItem{Data Integration Service}
+          {Responsible for creating an integration service which fetches data from various ad-marketing platforms and exports them to a data warehouse for further processing.}
+        \resumeItem{Tag Management System}
+          {Worked on the development and management of a Tag management system, that enables third-party tracking, analysis, and reporting.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Loktra}{Bengaluru, India}
+      {Full Stack Engineer}{Dec 2016 - May 2017}
+      \resumeItemListStart
+        \resumeItem{Field Workforce Automation Back-end}
+          {Led the effort to implemented back-end from scratch using Django for automated field workforce management software.}
+        \resumeItem{Location Tracking}
+          {Created a horizontal scale database system to collect location coordinates from GPS devices.}
+        \resumeItem{Location Analysis}
+          {Implemented data pipeline to collect and clean the coordinates and create a path out of them to plot the user journeys.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {AppPerfect}{Udaipur, India}
+      {Software Engineer}{Feb 2016 - Nov 2016}
+      \resumeItemListStart
+        \resumeItem{Load Test and Web Test}
+          {Responsible for developing and implementing new features for Load testing and Web testing tools.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Geetanjali Institute of Technical Studies}{Udaipur, India}
+      {Bachelor of Technology in Computer Science;  CGPA: 8.4/10.0}{2012 -- 2016}
+  \resumeSubHeadingListEnd
+  
+  
+
+% --------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+    \resumeSubItem{Proficient}
+      {: JavaScript, Python, Ruby, HTML, CSS}
+    \resumeSubItem{Tools/Frameworks}
+      {: React/Vue, LESS/SASS, Webpack/Gulp/Grunt, Git}
+    \resumeSubItem{Data}
+      {: Google BigQuery, MySQL/PostgreSQL, MongoDB}
+    \resumeSubItem{Cloud Platforms}
+      {: Google Cloud Platform, Amazon Web Services}
+ \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://bettinza.herokuapp.com/}{Online Betting Game}}
+      {Betting game made using React, HTML5.0 Canvas and Spring boot.}
+    \resumeSubItem{\href{https://yazlo.herokuapp.com/}{NoOps Database Storage and Querying}}
+      {Database Storage platform for managing/querying database through REST API, made using Django.}
+    \resumeSubItem{\href{https://tutoschedule.herokuapp.com/}{Calendar Scheduler}}
+      {Web application used by tutor for scheduling classes on his / her Google calendar by sharing scheduling link to students.}
+    \resumeSubItem{\href{https://flasksocketiochat.herokuapp.com/}{Chat Application}}
+      {Chatting web application developed on Flask and SocketIO, provides group and anonymous chat.}
+    \resumeSubItem{\href{https://codepen.io/bony2023/}{CSS Emojis}}
+      {Side hobby to create any emoji/art using just CSS.}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
