@@ -12,7 +12,12 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: main.tex
-      - name: Rename to resume.pdf
+      - name: Compress PDF
+        uses: jy95/ghostscript-action@v1
+        with:
+          file: 'main.pdf'
+          output: 'resume.pdf'
+          arbitrary-parameters: '-dBATCH -dNOPAUSE -dSAFER -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dDownsampleGrayImages=true -dDownsampleColorImages=true -dDownsampleMonoImages=true -dColorImageDownsampleType=/Bicubic -dColorImageResolution=200 -dGrayImageDownsampleType=/Bicubic -dGrayImageResolution=200 -dMonoImageDownsampleType=/Bicubic -dMonoImageResolution=200 -dEmbedAllFonts=true -dSubsetFonts=true'
         run: mv main.pdf resume.pdf
       - name: Commit the latest resume
         run: |
